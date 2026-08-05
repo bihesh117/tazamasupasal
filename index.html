@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="TAZA MASU PASAL - Fresh, hygienic and quality meat with home delivery across Patan and nearby Lalitpur areas.">
+<meta name="keywords" content="Taza Masu Pasal, fresh meat Patan, mutton Lalitpur, chicken Patan, meat delivery Lalitpur">
+<meta name="author" content="TAZA MASU PASAL">
+<title>TAZA MASU PASAL | Fresh Meat & Home Delivery</title>
+<style>
+:root{--red:#c91524;--dark:#111;--soft:#f7f7f7;--muted:#666;--white:#fff;--line:#e8e8e8;--shadow:0 12px 35px rgba(0,0,0,.09);--radius:18px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;color:var(--dark);background:#fff;line-height:1.6}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+button,input,textarea,select{font:inherit}
+.container{width:min(1160px,92%);margin:auto}
+.section{padding:85px 0}
+.section-head{text-align:center;max-width:720px;margin:0 auto 45px}
+.section-head span{color:var(--red);font-weight:800;text-transform:uppercase;letter-spacing:2px;font-size:.8rem}
+.section-head h2{font-size:clamp(2rem,4vw,3rem);margin:8px 0 12px}
+.section-head p{color:var(--muted)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:10px;padding:13px 21px;font-weight:800;cursor:pointer;transition:.25s}
+.btn-red{background:var(--red);color:white}.btn-red:hover{transform:translateY(-2px);background:#a90f1c}
+.btn-dark{background:var(--dark);color:white}.btn-dark:hover{transform:translateY(-2px)}
+.btn-light{background:white;color:var(--dark)}.btn-light:hover{transform:translateY(-2px)}
+header{position:sticky;top:0;z-index:1000;background:rgba(255,255,255,.97);border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{font-size:1.35rem;font-weight:900;letter-spacing:-.5px}.logo span{color:var(--red)}
+.nav-links{display:flex;gap:24px;align-items:center}.nav-links a{font-size:.92rem;font-weight:700}.nav-links a:hover{color:var(--red)}
+.menu{display:none;background:none;border:0;font-size:1.7rem;cursor:pointer}
+.hero{min-height:650px;display:grid;place-items:center;position:relative;overflow:hidden;background:linear-gradient(115deg,rgba(0,0,0,.9),rgba(0,0,0,.55)),url("https://images.unsplash.com/photo-1604503468506-a8da13d82791?auto=format&fit=crop&w=1800&q=85") center/cover}
+.hero-content{color:#fff;max-width:760px;text-align:center;padding:90px 0}.badge{display:inline-block;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);padding:7px 13px;border-radius:999px;font-weight:800;margin-bottom:18px}
+.hero h1{font-size:clamp(2.8rem,7vw,5.8rem);line-height:.95;margin-bottom:20px}.hero h1 span{color:#ff3342}.hero p{font-size:1.15rem;color:#eee;max-width:650px;margin:0 auto 30px}.hero-actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+.stats{background:var(--red);color:#fff}.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);text-align:center}.stat{padding:27px 10px;border-right:1px solid rgba(255,255,255,.2)}.stat:last-child{border:0}.stat strong{font-size:1.6rem;display:block}
+.grid{display:grid;gap:22px}.products{grid-template-columns:repeat(4,1fr)}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);transition:.3s}.card:hover{transform:translateY(-6px)}.card-img{height:210px;object-fit:cover;width:100%}.card-body{padding:22px}.card-body h3{margin-bottom:7px}.card-body p{color:var(--muted);font-size:.92rem;margin-bottom:15px}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}.about-img{height:500px;border-radius:25px;object-fit:cover}.check-list{list-style:none;margin:22px 0}.check-list li{margin:12px 0;font-weight:700}.check-list li::before{content:"✓";color:var(--red);font-weight:900;margin-right:10px}
+.feature-grid{grid-template-columns:repeat(3,1fr)}.feature{padding:28px;border:1px solid var(--line);border-radius:var(--radius);background:#fff}.icon{width:48px;height:48px;border-radius:12px;background:#fff0f1;color:var(--red);display:grid;place-items:center;font-size:1.4rem;margin-bottom:15px}
+.gallery{grid-template-columns:repeat(3,1fr)}.gallery img{width:100%;height:250px;object-fit:cover;border-radius:15px;transition:.3s}.gallery img:hover{transform:scale(1.025)}
+.dark-section{background:#111;color:#fff}.dark-section .section-head p{color:#bbb}
+.offer-grid{grid-template-columns:repeat(3,1fr)}.offer{padding:30px;border:1px solid #333;border-radius:var(--radius);background:#181818}.offer strong{font-size:2rem;color:#ff3342}.offer p{color:#bbb;margin:8px 0 20px}
+.area-list{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}.area{padding:12px 18px;background:#fff;border:1px solid var(--line);border-radius:999px;font-weight:700;box-shadow:0 5px 18px rgba(0,0,0,.05)}
+.review-grid{grid-template-columns:repeat(3,1fr)}.review{padding:27px;border:1px solid var(--line);border-radius:var(--radius);background:#fff}.stars{color:#e4a400;letter-spacing:2px;margin-bottom:12px}.review p{color:#555;font-style:italic;margin-bottom:15px}.review b{font-size:.9rem}
+.faq{max-width:850px;margin:auto}.faq-item{border-bottom:1px solid var(--line)}.faq-q{width:100%;padding:20px 0;background:none;border:0;display:flex;justify-content:space-between;align-items:center;font-weight:800;text-align:left;cursor:pointer}.faq-a{max-height:0;overflow:hidden;color:var(--muted);transition:max-height .3s ease}.faq-item.active .faq-a{max-height:150px;padding-bottom:18px}.faq-q span{color:var(--red);font-size:1.4rem}
+.contact-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:30px}.contact-box{padding:30px;border-radius:var(--radius);background:#111;color:#fff}.contact-item{padding:17px 0;border-bottom:1px solid #333}.contact-item:last-child{border:0}.contact-item small{color:#aaa;display:block}.form{padding:30px;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow)}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}.field{margin-bottom:15px}.field label{display:block;font-weight:700;margin-bottom:6px;font-size:.9rem}.field input,.field textarea,.field select{width:100%;padding:13px;border:1px solid #ddd;border-radius:10px;outline:none}.field input:focus,.field textarea:focus,.field select:focus{border-color:var(--red)}textarea{min-height:120px;resize:vertical}
+.map{min-height:300px;border-radius:var(--radius);background:linear-gradient(135deg,#eee,#ddd);display:grid;place-items:center;text-align:center;margin-top:25px;color:#555}.map div{background:#fff;padding:20px;border-radius:15px;box-shadow:var(--shadow)}
+.cta{background:var(--red);color:#fff;border-radius:25px;padding:55px;text-align:center}.cta h2{font-size:clamp(2rem,4vw,3rem);margin-bottom:10px}.cta p{margin-bottom:22px}
+footer{background:#0b0b0b;color:#aaa;padding:50px 0 25px}.footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:35px;margin-bottom:35px}.footer-logo{color:#fff;font-size:1.4rem;font-weight:900;margin-bottom:12px}.footer-logo span{color:var(--red)}footer h4{color:#fff;margin-bottom:12px}footer a{display:block;margin:7px 0}footer a:hover{color:#fff}.copyright{text-align:center;border-top:1px solid #222;padding-top:20px;font-size:.85rem}
+.floating{position:fixed;right:18px;bottom:18px;z-index:900;display:flex;flex-direction:column;gap:10px}.float-btn{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;color:#fff;font-weight:900;box-shadow:0 8px 25px rgba(0,0,0,.2)}.wa{background:#16a34a}.call{background:var(--red)}
+.toast{position:fixed;left:50%;bottom:25px;transform:translate(-50%,30px);background:#111;color:#fff;padding:13px 20px;border-radius:10px;opacity:0;pointer-events:none;transition:.3s;z-index:2000}.toast.show{opacity:1;transform:translate(-50%,0)}
+.reveal{opacity:0;transform:translateY(20px);transition:.7s}.reveal.show{opacity:1;transform:none}
+@media(max-width:900px){.nav-links{position:absolute;top:76px;left:0;right:0;background:#fff;display:none;flex-direction:column;padding:20px;border-bottom:1px solid var(--line);box-shadow:var(--shadow)}.nav-links.open{display:flex}.menu{display:block}.products{grid-template-columns:repeat(2,1fr)}.about-grid,.contact-grid{grid-template-columns:1fr}.about-img{height:360px}.feature-grid,.review-grid,.offer-grid{grid-template-columns:1fr 1fr}.footer-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.section{padding:60px 0}.hero{min-height:610px}.stats-grid{grid-template-columns:1fr 1fr}.stat{border-bottom:1px solid rgba(255,255,255,.2)}.products,.gallery,.feature-grid,.review-grid,.offer-grid{grid-template-columns:1fr}.gallery img{height:220px}.form-grid{grid-template-columns:1fr}.cta{padding:35px 20px}.footer-grid{grid-template-columns:1fr}.nav .btn{display:none}}
+</style>
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="logo" href="#home">TAZA <span>MASU PASAL</span></a>
+<button class="menu" aria-label="Open menu">☰</button>
+<nav class="nav-links">
+<a href="#home">Home</a><a href="#about">About</a><a href="#products">Products</a><a href="#delivery">Delivery</a><a href="#reviews">Reviews</a><a href="#faq">FAQ</a><a href="#contact">Contact</a>
+<a class="btn btn-red" href="#order">Order Now</a>
+</nav>
+</div>
+</header>
+
+<main>
+<section id="home" class="hero">
+<div class="container hero-content">
+<div class="badge">Fresh • Hygienic • Trusted</div>
+<h1>Fresh Meat.<br><span>Delivered Fresh.</span></h1>
+<p>TAZA MASU PASAL brings fresh, hygienic and high-quality mutton, chicken, eggs and sausages right to your doorstep across Patan.</p>
+<div class="hero-actions"><a class="btn btn-red" href="#order">Order Fresh Meat</a><a class="btn btn-light" href="#products">View Products</a></div>
+</div>
+</section>
+<section class="stats"><div class="container stats-grid"><div class="stat"><strong>100%</strong>Fresh Products</div><div class="stat"><strong>7+</strong>Delivery Areas</div><div class="stat"><strong>4</strong>Product Categories</div><div class="stat"><strong>Fast</strong>Home Delivery</div></div></section>
+
+<section id="about" class="section">
+<div class="container about-grid reveal">
+<img class="about-img" src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?auto=format&fit=crop&w=1000&q=80" alt="Fresh meat">
+<div><div class="section-head" style="text-align:left;margin:0 0 20px"><span>About Us</span><h2>Taja Masu, Bharpardo Sewa!</h2><p>We believe good food starts with fresh, carefully handled ingredients.</p></div>
+<p>TAZA MASU PASAL is your local destination for fresh and hygienic meat products in Patan. We focus on quality, cleanliness and dependable service so you can order confidently for everyday meals and special occasions.</p>
+<ul class="check-list"><li>Fresh and carefully selected meat</li><li>Hygienic handling and clean preparation</li><li>Convenient home delivery in Patan</li><li>Friendly and dependable customer service</li></ul><a href="#contact" class="btn btn-dark">Talk to Us</a></div>
+</div></section>
+
+<section id="products" class="section" style="background:var(--soft)">
+<div class="container"><div class="section-head"><span>Our Products</span><h2>Freshness You Can Trust</h2><p>Choose what you need and place your order in a few simple steps.</p></div>
+<div class="grid products">
+<article class="card reveal"><img class="card-img" src="https://images.unsplash.com/photo-1603048297172-c92544798d5a?auto=format&fit=crop&w=800&q=80" alt="Fresh mutton"><div class="card-body"><h3>Fresh Mutton</h3><p>Fresh, quality mutton prepared with care for your kitchen.</p><a class="btn btn-red" href="#order" data-product="Fresh Mutton">Order Mutton</a></div></article>
+<article class="card reveal"><img class="card-img" src="https://images.unsplash.com/photo-1587593810167-a84920ea0781?auto=format&fit=crop&w=800&q=80" alt="Fresh chicken"><div class="card-body"><h3>Fresh Chicken</h3><p>Fresh chicken, hygienically prepared and ready for your meal.</p><a class="btn btn-red" href="#order" data-product="Fresh Chicken">Order Chicken</a></div></article>
+<article class="card reveal"><img class="card-img" src="https://images.unsplash.com/photo-1582722872445-44dc5f7e3c8f?auto=format&fit=crop&w=800&q=80" alt="Fresh eggs"><div class="card-body"><h3>Eggs</h3><p>Quality eggs for breakfast, baking, snacks and everyday cooking.</p><a class="btn btn-red" href="#order" data-product="Eggs">Order Eggs</a></div></article>
+<article class="card reveal"><img class="card-img" src="https://images.unsplash.com/photo-1612392062631-94dd858cba88?auto=format&fit=crop&w=800&q=80" alt="Sausages"><div class="card-body"><h3>Sausages</h3><p>Tasty sausages for quick meals, snacks and family gatherings.</p><a class="btn btn-red" href="#order" data-product="Sausages">Order Sausages</a></div></article>
+</div></div></section>
+
+<section id="delivery" class="section"><div class="container">
+<div class="section-head"><span>Home Delivery</span><h2>Fresh Meat at Your Door</h2><p>Order from home and let us handle the delivery.</p></div>
+<div class="grid feature-grid">
+<div class="feature reveal"><div class="icon">🥩</div><h3>Choose Your Product</h3><p>Select mutton, chicken, eggs or sausages and tell us your required quantity.</p></div>
+<div class="feature reveal"><div class="icon">📞</div><h3>Confirm Your Order</h3><p>Send your order through the form, phone or WhatsApp and we'll confirm the details.</p></div>
+<div class="feature reveal"><div class="icon">🏠</div><h3>Get It Delivered</h3><p>We prepare your order with care and arrange convenient delivery around Patan.</p></div>
+</div>
+<div id="areas" style="margin-top:65px"><div class="section-head"><span>Delivery Areas</span><h2>Serving Patan & Nearby Areas</h2></div><div class="area-list"><span class="area">Tadhoka</span><span class="area">Lagankhel</span><span class="area">Jawalakhel</span><span class="area">Kupondole</span><span class="area">Pulchowk</span><span class="area">Sanepa</span><span class="area">Nearby Patan Areas</span></div></div>
+</div></section>
+
+<section id="offers" class="section dark-section"><div class="container"><div class="section-head"><span>Special Offers</span><h2>Good Food, Better Deals</h2><p>Ask us about today's available deals and family-order offers.</p></div><div class="grid offer-grid">
+<div class="offer reveal"><strong>Family Order</strong><p>Planning a family meal? Ask about a convenient mixed order.</p><a href="#order" class="btn btn-red">Ask for Offer</a></div>
+<div class="offer reveal"><strong>Bulk Order</strong><p>Ordering for a gathering? Contact us for quantity-based arrangements.</p><a href="#contact" class="btn btn-light">Contact Us</a></div>
+<div class="offer reveal"><strong>Fresh Delivery</strong><p>Get fresh products delivered conveniently around our service areas.</p><a href="#order" class="btn btn-red">Order Now</a></div>
+</div></div></section>
+
+<section id="why" class="section"><div class="container"><div class="section-head"><span>Why Choose Us</span><h2>Simple. Fresh. Reliable.</h2></div><div class="grid feature-grid">
+<div class="feature reveal"><div class="icon">✓</div><h3>Quality First</h3><p>We prioritize fresh, quality products for your family.</p></div>
+<div class="feature reveal"><div class="icon">🧼</div><h3>Hygienic Handling</h3><p>Clean and careful preparation is part of our everyday service.</p></div>
+<div class="feature reveal"><div class="icon">⚡</div><h3>Convenient Service</h3><p>Order by phone, WhatsApp or our online order form.</p></div>
+</div></div></section>
+
+<section id="gallery" class="section" style="background:var(--soft)"><div class="container"><div class="section-head"><span>Gallery</span><h2>A Look at Freshness</h2></div><div class="grid gallery">
+<img class="reveal" src="https://images.unsplash.com/photo-1604503468506-a8da13d82791?auto=format&fit=crop&w=900&q=80" alt="Fresh meat selection">
+<img class="reveal" src="https://images.unsplash.com/photo-1587593810167-a84920ea0781?auto=format&fit=crop&w=900&q=80" alt="Fresh chicken">
+<img class="reveal" src="https://images.unsplash.com/photo-1603048297172-c92544798d5a?auto=format&fit=crop&w=900&q=80" alt="Fresh mutton">
+<img class="reveal" src="https://images.unsplash.com/photo-1582722872445-44dc5f7e3c8f?auto=format&fit=crop&w=900&q=80" alt="Eggs">
+<img class="reveal" src="https://images.unsplash.com/photo-1612392062631-94dd858cba88?auto=format&fit=crop&w=900&q=80" alt="Sausages">
+<img class="reveal" src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=80" alt="Prepared meat">
+</div></div></section>
+
+<section id="reviews" class="section"><div class="container"><div class="section-head"><span>Customer Reviews</span><h2>What Customers Say</h2></div><div class="grid review-grid">
+<div class="review reveal"><div class="stars">★★★★★</div><p>“Fresh meat, clean preparation and very convenient delivery. Great local service.”</p><b>— Happy Customer, Patan</b></div>
+<div class="review reveal"><div class="stars">★★★★★</div><p>“The ordering process is simple and the products arrive fresh. Recommended.”</p><b>— Local Customer</b></div>
+<div class="review reveal"><div class="stars">★★★★★</div><p>“Good service and friendly communication. I like being able to order from home.”</p><b>— Patan Customer</b></div>
+</div></div></section>
+
+<section id="faq" class="section" style="background:var(--soft)"><div class="container"><div class="section-head"><span>FAQ</span><h2>Frequently Asked Questions</h2></div><div class="faq">
+<div class="faq-item"><button class="faq-q">Where do you deliver? <span>+</span></button><div class="faq-a">We deliver around Tadhoka, Lagankhel, Jawalakhel, Kupondole, Pulchowk, Sanepa and nearby Patan areas.</div></div>
+<div class="faq-item"><button class="faq-q">How can I place an order? <span>+</span></button><div class="faq-a">Use the Order Now form, call +977 9818869739, or message us on WhatsApp.</div></div>
+<div class="faq-item"><button class="faq-q">What products do you sell? <span>+</span></button><div class="faq-a">We offer fresh mutton, fresh chicken, eggs and sausages.</div></div>
+<div class="faq-item"><button class="faq-q">Can I request a specific quantity? <span>+</span></button><div class="faq-a">Yes. Mention your required quantity and preparation preference in your order message and we'll confirm availability.</div></div>
+<div class="faq-item"><button class="faq-q">How do I know the delivery is available in my area? <span>+</span></button><div class="faq-a">Contact us with your location. We serve the listed Patan areas and nearby locations depending on delivery availability.</div></div>
+</div></div></section>
+
+<section id="contact" class="section"><div class="container"><div class="section-head"><span>Contact</span><h2>Let's Get Your Order Ready</h2><p>Call or WhatsApp us for quick assistance.</p></div>
+<div class="contact-grid"><div class="contact-box"><h3>TAZA MASU PASAL</h3><div class="contact-item"><small>Phone</small><a href="tel:+9779818869739">+977 9818869739</a></div><div class="contact-item"><small>WhatsApp</small><a href="https://wa.me/9779818869739" target="_blank">+977 9818869739</a></div><div class="contact-item"><small>Service</small>Patan & nearby Lalitpur areas</div><div class="contact-item"><small>Tagline</small>Taja Masu, Bharpardo Sewa!</div></div>
+<form class="form" id="contactForm"><div class="form-grid"><div class="field"><label>Name</label><input required type="text" placeholder="Your name"></div><div class="field"><label>Phone</label><input required type="tel" placeholder="Your phone number"></div></div><div class="field"><label>Message</label><textarea required placeholder="How can we help?"></textarea></div><button class="btn btn-red" type="submit">Send Message</button></form></div>
+<div class="map"><div><strong>📍 Google Maps Placeholder</strong><p>Add your exact shop location or Google Maps embed here.</p></div></div>
+</div></section>
+
+<section id="order" class="section" style="background:var(--soft)"><div class="container"><div class="section-head"><span>Order Now</span><h2>Place Your Fresh Meat Order</h2><p>Fill in your details. Your order will open in WhatsApp for confirmation.</p></div>
+<form class="form" id="orderForm" style="max-width:850px;margin:auto"><div class="form-grid"><div class="field"><label>Your Name *</label><input id="name" required type="text" placeholder="Full name"></div><div class="field"><label>Phone Number *</label><input id="phone" required type="tel" placeholder="98XXXXXXXX"></div></div>
+<div class="form-grid"><div class="field"><label>Product *</label><select id="product" required><option value="">Select product</option><option>Fresh Mutton</option><option>Fresh Chicken</option><option>Eggs</option><option>Sausages</option></select></div><div class="field"><label>Quantity *</label><input id="quantity" required type="text" placeholder="e.g. 2 kg / 1 tray"></div></div>
+<div class="field"><label>Delivery Area *</label><input id="area" required type="text" placeholder="e.g. Tadhoka, Lagankhel"></div><div class="field"><label>Additional Instructions</label><textarea id="notes" placeholder="Preparation preference or other details"></textarea></div>
+<button class="btn btn-red" type="submit">Order via WhatsApp →</button></form></div></section>
+
+<section class="section"><div class="container"><div class="cta"><h2>Hungry? Let's Make It Fresh.</h2><p>Taja Masu, Bharpardo Sewa!</p><a class="btn btn-light" href="#order">Order Now</a></div></div></section>
+</main>
+
+<footer><div class="container"><div class="footer-grid"><div><div class="footer-logo">TAZA <span>MASU PASAL</span></div><p>Fresh, hygienic and quality meat with convenient home delivery across Patan.</p></div><div><h4>Quick Links</h4><a href="#home">Home</a><a href="#about">About</a><a href="#products">Products</a><a href="#delivery">Delivery Areas</a><a href="#order">Order Now</a></div><div><h4>Contact</h4><a href="tel:+9779818869739">+977 9818869739</a><a href="https://wa.me/9779818869739" target="_blank">WhatsApp Us</a><a href="#contact">Contact Form</a></div></div><div class="copyright">© 2026 TAZA MASU PASAL. All rights reserved.</div></div></footer>
+
+<div class="floating"><a class="float-btn wa" href="https://wa.me/9779818869739" target="_blank" aria-label="WhatsApp">WA</a><a class="float-btn call" href="tel:+9779818869739" aria-label="Call">☎</a></div>
+<div class="toast" id="toast">Message sent successfully!</div>
+<script>
+const menu=document.querySelector('.menu'),links=document.querySelector('.nav-links');
+menu.addEventListener('click',()=>links.classList.toggle('open'));
+document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>links.classList.remove('open')));
+
+document.querySelectorAll('.faq-q').forEach(btn=>btn.addEventListener('click',()=>{
+ const item=btn.parentElement; item.classList.toggle('active'); btn.querySelector('span').textContent=item.classList.contains('active')?'−':'+';
+}));
+
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+
+const toast=document.getElementById('toast');
+function showToast(text){toast.textContent=text;toast.classList.add('show');setTimeout(()=>toast.classList.remove('show'),3000)}
+
+document.querySelectorAll('[data-product]').forEach(btn=>btn.addEventListener('click',()=>{
+ setTimeout(()=>{const select=document.getElementById('product');select.value=btn.dataset.product},100);
+}));
+
+document.getElementById('contactForm').addEventListener('submit',e=>{
+ e.preventDefault();
+ const name=e.target.querySelector('input[type="text"]').value;
+ const phone=e.target.querySelector('input[type="tel"]').value;
+ const message=e.target.querySelector('textarea').value;
+ const text=`Hello TAZA MASU PASAL!%0A%0AI have a message.%0A%0AName: ${encodeURIComponent(name)}%0APhone: ${encodeURIComponent(phone)}%0AMessage: ${encodeURIComponent(message)}`;
+ window.open('https://wa.me/9779818869739?text='+text,'_blank');
+ e.target.reset();
+});
+
+document.getElementById('orderForm').addEventListener('submit',e=>{
+ e.preventDefault();
+ const name=document.getElementById('name').value, phone=document.getElementById('phone').value, product=document.getElementById('product').value, qty=document.getElementById('quantity').value, area=document.getElementById('area').value, notes=document.getElementById('notes').value;
+ const text=`Hello TAZA MASU PASAL!%0A%0AI want to place an order.%0A%0AName: ${encodeURIComponent(name)}%0APhone: ${encodeURIComponent(phone)}%0AProduct: ${encodeURIComponent(product)}%0AQuantity: ${encodeURIComponent(qty)}%0ADelivery Area: ${encodeURIComponent(area)}%0ANotes: ${encodeURIComponent(notes||'None')}`;
+ window.open('https://wa.me/9779818869739?text='+text,'_blank');
+});
+</script>
+</body>
+</html>
